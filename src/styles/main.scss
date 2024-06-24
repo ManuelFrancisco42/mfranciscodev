@@ -1,11 +1,15 @@
 $website-width: 1280px;
-$main-color: #ffbc00;
+/* $main-color: #ffbc00;
 $light-color: #f4f4f4;
 $medium-color: #ccc;
-$dark-color: #333;  
-
-
-
+$dark-color: #333;   */
+  
+$medium-color: #ccc;
+//$medi-color: rgba(3, 30, 60, 1);
+$main-color: rgba(2, 7, 19, 1);
+$dark-color: rgba(19, 20, 25, 1);
+$light-color: hsl(216, 19%, 18%);
+$bg-color: #ba265d;
 // Set Text Color
 @function set-text-color($color) {
   @if (lightness($color) > 50) {
@@ -82,7 +86,7 @@ img {
     &-light {
       @extend %btn-shared;
       color: #333;
-      background-color: $light-color;
+      background-color: #ccc;
     }
   
     &-dark {
@@ -95,13 +99,13 @@ img {
   button[class^='btn-']:hover,
   a[class^='btn-']:hover,
   input[class^='btn-']:hover {
-    background-color: $main-color;
+    background-color: $bg-color;
   }
   
   // Backgrounds
   .bg {
     &-main {
-      background: $main-color;
+      background: $bg-color;
       color: set-text-color($main-color);
     }
     &-dark {
