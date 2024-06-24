@@ -1,0 +1,51 @@
+
+// Contact Page
+#contact {
+
+    &-b {
+      .contact-info {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        text-align: center;
+      }
+    }
+  
+    &-c {
+      h1 {
+        text-align: center;
+        font-size: 4rem;
+      }
+    }
+  }
+
+@media (max-width: 500px) {
+  #contact-b .contact-info {
+    grid-template-columns: 1fr;
+  }
+
+   // Contact
+   #contact {
+  
+    &-b {
+      div {
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px #555 solid;
+
+        &:last-child {
+          border: none;
+          margin-bottom: 0;
+          padding-bottom: 0;
+        }
+      }
+    }
+    
+    &-c {
+      h1 {
+        font-size: 2rem;
+      }
+    }
+    }
+
+
+    }

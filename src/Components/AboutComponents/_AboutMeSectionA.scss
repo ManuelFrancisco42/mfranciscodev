@@ -1,0 +1,50 @@
+$main-color: #ffbc00;
+
+#about-a {
+  .about-info {
+    display: grid;
+    grid-template-areas:
+      'myselImage bio bio'
+      'aw1 aw2 aw3';
+    grid-gap: 1.2rem;
+  }
+
+  .bio-image {
+    grid-area: myselImage;
+  }
+
+  .bio {
+    grid-area: bio;
+    border-left: 3px solid $main-color;
+    padding: 0.8rem;
+  }
+
+  .award-1, .award-2, .award-3 {
+    grid-area: aw1, aw2, aw3;
+  }
+
+  .award-1 .fas,
+  .award-2 .fas,
+  .award-3 .fas {
+    color: $main-color;
+    margin: 1rem;
+  }
+}
+
+
+@media (max-width: 500px) {
+  // Stack Grid Columns
+  #about {
+    &-a {
+      .about-info {
+        grid-template-areas:
+          'myselImage'
+          'bio'
+          'aw1'
+          'aw2'
+          'aw3';
+      }
+    }
+  
+}
+}

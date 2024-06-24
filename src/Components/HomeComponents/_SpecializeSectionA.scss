@@ -1,0 +1,46 @@
+// Variables
+$main-color: #ffbc00;
+
+// Home Sections
+#home {
+  // Home Section A
+  &-a {
+    .specials {
+      margin-top: 3rem;
+      display: grid;
+      grid-gap: 1rem;
+      grid-template-columns: repeat(4, 1fr);
+
+      .fas {
+        color: $main-color;
+        padding-bottom: 0.4rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+     // Stack Grid Columns
+#home-a .specials,  #home-a .specials {
+       grid-template-columns: 1fr;
+     }
+
+  // Home
+  #home {
+    &-a {
+      .specials div {
+        border-bottom: 1px var(--light-color) solid;
+        padding-bottom: 1rem;
+
+        &:last-child {
+          border: none;
+          padding-bottom: 0;
+        }
+      }
+    }
+
+  
+  }
+
+}
+

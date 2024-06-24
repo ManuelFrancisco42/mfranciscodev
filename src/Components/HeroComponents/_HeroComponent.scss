@@ -1,0 +1,36 @@
+/* 
+===========
+Hero Section
+===========
+*/
+.hero {
+    position: relative; 
+    background: var(--bg-image) no-repeat center right / cover;
+    // background: $bg-image no-repeat center right / cover;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 46px;
+    margin: -20px 0 20px;
+  }
+  
+  .hero p {
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+  
+  .svg-icon path:nth-child(1) {
+    fill: #ff0000;
+  }
+  .svg-icon path:nth-child(2) {
+    fill: #00ff00;
+    font-size: 2rem;
+  }
+
+
