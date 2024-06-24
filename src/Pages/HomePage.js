@@ -3,7 +3,6 @@ import Specialize from '../Components/HomeComponents/SpecializeSectionA';
 import Stats from '../Components/HomeComponents/StasSectionB';
 import Process from '../Components/HomeComponents/ProcessSectionC';
 
-
 const HomePage = () => {
   return (
     <div className="App">

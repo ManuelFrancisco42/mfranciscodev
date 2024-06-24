@@ -31,7 +31,7 @@ const Header = () => {
       <div className="container">
         <nav className={`nav ${isActive ? 'active' : ''}`} id="main-nav">
           <div id="logo">
-          <h1 className="logo font-handwriten"><Link to="/">Portfolio</Link></h1>
+            <h1 className="logo"><Link className="log" to="/">Portfolio</Link></h1>
             <p>Manuel Francisco</p>
           </div>
           <ul>

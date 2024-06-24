@@ -3,12 +3,13 @@
 Header Section
 ===========
 */
+//--bg-image:url('../assets/images/showcase.webp');
 
 // Variables
 $main-color: #ff6600;
 $medium-color: #cccccc;
 $dark-color: #333;
-$bg-image: url("../../assets/images/showcase.webp");
+$bg-image: linear-gradient(to right bottom, rgba(11, 11, 19, 0.8), rgba(16, 16, 26, 0.8)),   url("../../assets/images/showcase.webp");
 
 // Logo
 #logo {
@@ -24,15 +25,29 @@ $bg-image: url("../../assets/images/showcase.webp");
   position: fixed;
   top: 0;
   left: 0;
+  right: 0;
   width: 100%;
   background: $bg-image;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: 4px solid hsla(338, 66%, 44%, 0.171); ;
   z-index: 1000;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.active {
+.nav.active {
   background: #fff;
-  color: #000000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+  color: #222;
+}
+.nav.active p {
+  color: #222;
+}
+
+#main-nav.active a{
+  color: #000;
 }
 
 #main-nav {
@@ -54,7 +69,7 @@ $bg-image: url("../../assets/images/showcase.webp");
     text-transform: uppercase;
     border-bottom: 3px transparent solid;
     padding-bottom: 0.5rem;
-    transition: border-color 0.5s;
+    transition: border-color 0.5s, color 0.3s; /* Added transition for color */
 
     &:hover {
       border-color: $medium-color;
@@ -88,7 +103,7 @@ $bg-image: url("../../assets/images/showcase.webp");
   // Header Inner
   &-inner {
     height: 5.5rem;
-    border-bottom: 3px solid $main-color;
+    // border-bottom: 3px solid $main-color;
   }
 }
 
@@ -126,7 +141,7 @@ $bg-image: url("../../assets/images/showcase.webp");
   #header {
     &-home {
       height: 10rem;
-      border-bottom: 3px solid $main-color;
+      // border-bottom: 3px solid $main-color;
       background-position: 20% 30%;
 
       .header-content {

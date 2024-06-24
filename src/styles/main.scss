@@ -3,25 +3,8 @@ $main-color: #ffbc00;
 $light-color: #f4f4f4;
 $medium-color: #ccc;
 $dark-color: #333;  
-// $bg-image: url('../assets/images/showcase.webp'); 
 
 
-
-:root {
-  --website-width: 1280px;
-  // my colores 
-  --medium-color: hsla(0, 0%, 80%, 0.4); 
-  --orange: hsl(39, 100%, 50%);
-  --white: #fff;
-  --black: #000;
-  --dark-color: #333;
-  --primary-color: #0b0b13;
-  --secondary-color: #10101a;
-  --tertiary-color: #ba265d; 
-  --border-color: hsla(338, 66%, 44%, 0.171); 
-  --bg-image: linear-gradient(to right bottom, rgba(11, 11, 19, 0.8), rgba(16, 16, 26, 0.8)),  url('../assets/images/showcase.webp');
-  --banner-image: linear-gradient(to right bottom, rgba(11, 11, 19, 0.8), rgba(16, 16, 26, 0.8)),  url('../assets/images/websitebanner_00017.png');
-}
 
 // Set Text Color
 @function set-text-color($color) {
