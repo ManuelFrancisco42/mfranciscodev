@@ -78,7 +78,7 @@ const skills = [
   return (
     <section className="home-c  py-2" id="experience">
       <div className="container">
-      <h2 className="section-title" lang="fr">Experience</h2>
+      <h2 className="section-title skills-txt-color" lang="fr">Experience</h2>
       <div className="content">
         <div className="skills">
           {skills.map((skill, id) => {
