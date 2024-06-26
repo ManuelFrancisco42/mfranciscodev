@@ -1,7 +1,8 @@
-
 // Variables
 $light-color: hsl(216, 19%, 18%);
 $medium-color: #ccc;
+$tertiary-color: #ba265d; 
+$primary-color: #0b0b13;
 
 // Home Sections
 #home {
@@ -10,22 +11,25 @@ $medium-color: #ccc;
     .stats {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-
+      gap: 0.5rem;
       li {
         line-height: 2;
-
+        color: #fff;
+        &:nth-child(even) {
+          color: #fff;
+        }
         &.stats-title {
           font-size: 1.5rem;
         }
-
         &.stats-number {
           font-size: 2rem;
           font-weight: bold;
         }
 
-        img {
+        svg.svgColor {
           width: 70px; // Adjust the size as needed
           height: 70px; // Adjust the size as needed
+         fill: #fff;
         }
       }
 
@@ -33,21 +37,21 @@ $medium-color: #ccc;
         padding: 3rem 0;
 
         &:nth-child(odd) {
-          background: $light-color;
+          background: $tertiary-color;
         }
 
         &:nth-child(even) {
-          background: $medium-color;
+          background: $primary-color;
+          color: #fff;
         }
       }
     }
   }
 }
 
-
 @media (max-width: 500px) {
   // Stack Grid Columns
-#home-b .stats {
+  #home-b .stats {
     grid-template-columns: 1fr;
   }
 
@@ -57,4 +61,3 @@ $medium-color: #ccc;
     }
   }
 }
-

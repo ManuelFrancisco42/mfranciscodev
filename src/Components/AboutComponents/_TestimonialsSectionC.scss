@@ -1,0 +1,40 @@
+$medium-color: #ccc;
+
+#about {
+  // About D
+  &-d {
+    .testimonials {
+      display: flex;
+      justify-content: space-between;
+      gap: 0.5rem;
+      div {
+        flex: 1;
+        border: 1px solid $medium-color;
+        border-radius: 5px;
+        padding: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 200px;  
+      }
+
+      h4 {
+        margin-bottom: 0.5rem;
+      }
+
+      p {
+        margin: 0;
+        text-align: center;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 500px) {
+  #about-d .testimonials {
+    flex-direction: column;
+  }
+  
+}

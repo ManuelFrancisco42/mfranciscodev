@@ -10,7 +10,7 @@ const Specialize = () => {
     <section id="home-a" className="text-center py-2">
       <div className="container">
         <h2 className="section-title" lang="fr">Je me consacre à la</h2>
-        <div className="bottom-line"></div>
+      
         <p className="lead" lang="fr">
             Création d&apos;expériences numériques uniques pour sites web et applications.
           </p>

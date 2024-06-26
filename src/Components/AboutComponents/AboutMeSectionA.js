@@ -12,12 +12,12 @@ const AboutMeSectionA = () => (
       <p className="lead" lang="fr">
         VOTRE VISION, MON ENGAGEMENT...
       </p>
-      <div className="bottom-line"></div>
+      
       <p className="lead">
       Laissez-moi vous parler un peu de moi et de ce que je fais...
       </p>
       <div className="about-info">
-        <img src={myself} alt="Manuel Francisco" className="bio-image" />
+        <img src={myself} alt="Manuel Francisco" className="my-image" />
         <div className="bio bg-light">
           <h4 lang="fr">Votre projet est entre de bonnes mains</h4>
           <p lang="fr">
@@ -39,7 +39,7 @@ const AboutMeSectionA = () => (
           <img
             src={writingDownImage}
             alt="Person writing a brainstorm"
-            className="bio-image"
+            className="my-image"
             title="Maquettes détaillées"
           />
           <h3 lang="fr">Maquettes détaillées</h3>
@@ -51,7 +51,7 @@ const AboutMeSectionA = () => (
           <img
             src={pointdrawingsImage}
             alt="Person drawing mobile sketches"
-            className="bio-image"
+            className="my-image"
             title="Vous pouvez suivre tout le processus"
           />
           <h3 lang="fr">Vous pouvez suivre tout le processus</h3>
@@ -64,7 +64,7 @@ const AboutMeSectionA = () => (
           <img
             src={PhoneontableImage}
             alt="Phone on a table"
-            className="bio-image"
+            className="my-image"
             title="Utilisation des outils"
           />
           <h3 lang="fr">Utilisation des outils</h3>

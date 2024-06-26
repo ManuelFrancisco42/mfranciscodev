@@ -7,9 +7,10 @@ import htmlImage from '../../assets/images/skills/html.png'
 import cssImage from '../../assets/images/skills/css.png'
 import reactImage from '../../assets/images/skills/react.png'
 import nodeImage from '../../assets/images/skills/node.png'
-import graphQLImage from '../../assets/images/skills/graphql.png'
 import mongodbImage from '../../assets/images/skills/mongodb.png'
 import figmaImage from '../../assets/images/skills/figma.png'
+import jsImage from '../../assets/images/skills/javascript.png'
+
 
 
 export const TechnicalSkills = () => {
@@ -53,6 +54,10 @@ const skills = [
     "imageSrc": cssImage,
   },
   {
+    "title": "Javascript",
+    "imageSrc": jsImage,
+  },
+  {
     "title": "React",
     "imageSrc": reactImage,
   },
@@ -60,10 +65,7 @@ const skills = [
     "title": "Node",
     "imageSrc": nodeImage,
   },
-  {
-    "title": "GraphQL",
-    "imageSrc": graphQLImage,
-  },
+ 
   {
     "title": "MongoDB",
     "imageSrc": mongodbImage,
@@ -76,7 +78,7 @@ const skills = [
 
 
   return (
-    <section className="home-c  py-2" id="experience">
+    <section className="home-c  py-2  bg-dark" id="experience">
       <div className="container">
       <h2 className="section-title skills-txt-color" lang="fr">Experience</h2>
       <div className="content">

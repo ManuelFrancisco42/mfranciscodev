@@ -1,4 +1,4 @@
-$main-color: rgba(2, 7, 19, 1);
+$main-color:  #0b0b13;
 
 #about-a {
   .about-info {
@@ -7,11 +7,14 @@ $main-color: rgba(2, 7, 19, 1);
       'myselImage bio bio'
       'aw1 aw2 aw3';
     grid-gap: 1.2rem;
+
   }
 
-  .bio-image {
+  .my-image {
     grid-area: myselImage;
   }
+
+ 
 
   .bio {
     grid-area: bio;

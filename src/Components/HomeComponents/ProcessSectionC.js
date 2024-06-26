@@ -3,12 +3,12 @@ import "./_ProcessSectionC.scss";
 
 const Process = () => {
   return (
-    <section id="home-c" className="text-center py-2">
+    <section id="home-c" className="text-center py-3 bg-dark">
       <div className="container">
         <h2 className="section-title" lang="fr">
           Mon Processus Créatif
         </h2>
-        <div className="bottom-line"></div>
+       
         <p className="lead" lang="fr">
           Chaque projet et design dans mon univers créatif suit une formule
           éprouvée pour atteindre les résultats recherchés.

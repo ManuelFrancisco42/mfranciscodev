@@ -9,12 +9,16 @@
   /* Fonts */
   --font-roboto: "Dosis";
 }
- 
-.home-c {
-  
-  background: linear-gradient(90deg, #04152d 0%, #0b2447 100%);
-}
+$main-color:  #0b0b13;
+$dark-color: rgba(19, 20, 25, 1);
 
+
+
+/* .home-c {
+  
+  background: linear-gradient(90deg, rgb(11, 11, 19) 0%, rgba(19, 20, 25, 1) 100%);
+}
+ */
 
 .skillsContainer {
   color: var(--color-text);
@@ -88,7 +92,7 @@
   align-items: center;
   gap: 17px;
   background: #19376d;
-  background: linear-gradient(90deg, #030914 0%, rgba(10, 27, 59, 0.363) 100%);
+  background: linear-gradient(90deg, rgb(11, 11, 19) 0%, rgba(19, 20, 25, 0.863) 100%);
   border-radius: 10px;
   padding: 24px;
   color: #fff;

@@ -1,12 +1,9 @@
 $website-width: 1280px;
-/* $main-color: #ffbc00;
-$light-color: #f4f4f4;
-$medium-color: #ccc;
-$dark-color: #333;   */
+
   
 $medium-color: #ccc;
 //$medi-color: rgba(3, 30, 60, 1);
-$main-color: rgba(2, 7, 19, 1);
+$main-color:  rgb(11, 11, 19);
 $dark-color: rgba(19, 20, 25, 1);
 $light-color: hsl(216, 19%, 18%);
 $bg-color: #ba265d;
@@ -177,13 +174,7 @@ list-style: none;
     text-transform: uppercase;
   }
   
-  .bottom-line {
-    height: 2px;
-    width: 3rem;
-    background: $main-color;
-    display: block;
-    margin: 0 auto 1rem auto;
-  }
+
   
 
 // Import Component Styles
@@ -194,8 +185,7 @@ list-style: none;
 @import '../Components/HomeComponents/ProcessSectionC';
 @import '../Components/AboutComponents/AboutMeSectionA';
 @import '../Components/AboutComponents/TechnicalSkillsSectionB';
-@import '../Components/AboutComponents/LogosSectionC';
-@import '../Components/AboutComponents/TestimonialsSectionD';
+@import '../Components/AboutComponents/TestimonialsSectionC';
 @import '../Components/ContactComponents/ContactFormSectionA';
 @import '../Components/ContactComponents/ContactInfoSectionB';
 @import '../Components/FooterComponents/FooterComponent';

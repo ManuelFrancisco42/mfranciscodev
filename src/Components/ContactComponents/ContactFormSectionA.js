@@ -6,9 +6,9 @@ const ContactForm = () => {
     <section id="contact-a" className="text-center py-3">
       <div className="container">
         <h2 className="section-title">Contact Me</h2>
-        <div className="bottom-line"></div>
+      
         <p className="lead"  lang="fr">Voici comment vous pouvez me contacter</p>
-        <form method="POST" data-netlify="true" data-netlify-recaptcha="true">
+        <form method="POST" data-netlify="true" data-netlify-recaptcha="true" action="https://formspree.io/f/xrgwvyqd">
           <div className="text-fields">
             <input
               type="text"
