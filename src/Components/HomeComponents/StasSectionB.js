@@ -1,32 +1,42 @@
 import React from 'react';
-import  './_StasSectionB.scss';
+import certificate from '../../assets/images/stats/certificate.svg';
+import validator from '../../assets/images/stats/access_time.svg';
+import timelapse from '../../assets/images/stats/check_circle_outline.svg';
+import './_StasSectionB.scss';
 
 const Stats = () => {
   return (
     <section id="home-b" className="text-center py-2">
+      {/* <h2 className="lead" lang="fr">Custom Web Development Solutions</h2> */}
       <div className="stats">
-        <StatItem iconClass="fas fa-users fa-3x" title="Clients" number="100" />
-        <StatItem iconClass="fas fa-award fa-3x" title="Awards" number="3" />
-        <StatItem
-          iconClass="fas fa-hourglass-start fa-3x"
-          title="Hours Worked"
-          number="3500"
+        <StatItem 
+          svg={certificate}
+          title="Certificat"
+          number="20"
+          alt="icon termines"
         />
-        <StatItem
-          iconClass="fas fa-code-branch fa-3x"
-          title="Projects Completed"
-          number="135"
+        <StatItem 
+          svg={validator}
+          title="Heures de Formation"
+          number="+ 1125"
+          alt="icon project"
+        />
+        <StatItem 
+          svg={timelapse}
+          title="Projets Terminés"
+          number="+ 35"
+          alt="icon project termines"
         />
       </div>
     </section>
   );
 };
 
-const StatItem = ({ iconClass, title, number }) => {
+const StatItem = ({ svg, title, number, alt }) => {
   return (
     <div>
       <ul>
-        <li><i className={iconClass}></i></li>
+        <li><img src={svg} alt={alt} /></li>
         <li className="stats-title">{title}</li>
         <li className="stats-number">{number}</li>
       </ul>

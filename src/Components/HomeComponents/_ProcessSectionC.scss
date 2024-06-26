@@ -28,7 +28,7 @@ $dark-color: rgba(19, 20, 25, 1);
         width: 15px;
         line-height: 15px;
         padding: 1rem;
-        transition: all 1s;
+        transition: width 2s, height 2s, transform 2s;
       }
 
       // Process Icon
@@ -43,12 +43,15 @@ $dark-color: rgba(19, 20, 25, 1);
         text-align: center;
         position: relative;
         transition: all 1s;
+        cursor: pointer;
 
         &:hover {
           background: $main-color;
           width: 90px;
           height: 90px;
           line-height: 90px;
+          transform: rotate(360deg);
+          border-radius: 0%;
 
           .process-step {
             background: $dark-color;

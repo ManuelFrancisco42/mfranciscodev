@@ -1,44 +1,46 @@
 import React from 'react';
+import logo from '../../assets/images/showcase/web-development-showcase-2.jpg';
+import img1 from '../../assets/images/showcase/web-development-showcase-3.jpg';
+import img2 from '../../assets/images/showcase/web-development-showcase-5.jpg';
+import img3 from '../../assets/images/showcase/web-development-showcase-1.jpg';
 import  './_SpecializeSectionA.scss';
 
 const Specialize = () => {
   return (
     <section id="home-a" className="text-center py-2">
       <div className="container">
-        <h2 className="section-title">I Specialize In</h2>
+        <h2 className="section-title" lang="fr">Je me consacre à la</h2>
         <div className="bottom-line"></div>
-        <p className="lead">
-          Photography as well as creating digital masterpieces and UI/UX layouts
-          for websites and mobile applications
-        </p>
+        <p className="lead" lang="fr">
+            Création d&apos;expériences numériques uniques pour sites web et applications.
+          </p>
+        <p className="lead" lang="fr">
+        Services professionnels de développeur web et d&apos;intégrateur web
+          </p>
         <div className="specials">
           <SpecializeItem
-            iconClass="fas fa-file-alt fa-2x"
-            title="Concepting"
-            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
-              molestias repellat quibusdam adipisci quas sed ullam accusantium
-              aliquam numquam quidem."
+              imgSrc={logo}
+              alt="Web integration services"
+              title="Discutions Votre Website"
+              description="Donnons vie à votre projet avec dévouement et professionnalisme."
           />
           <SpecializeItem
-            iconClass="fas fa-desktop fa-2x"
-            title="UI/UX"
-            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
-              molestias repellat quibusdam adipisci quas sed ullam accusantium
-              aliquam numquam quidem."
+              imgSrc={img1}
+              alt="Web developer working on code"
+              title="Brainstorming Site internet"
+              description="Définissons ensemble le concept unique de votre projet lors d&apos;une session où chaque idée prend vie."
           />
           <SpecializeItem
-            iconClass="fas fa-object-ungroup fa-2x"
-            title="Visual Design"
-            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
-              molestias repellat quibusdam adipisci quas sed ullam accusantium
-              aliquam numquam quidem."
+              imgSrc={img2}
+              alt="Web integration services"
+              title="Planification et Discussion"
+              description="Discutons des détails et établissons des plans solides pour assurer le succès de votre website."
           />
           <SpecializeItem
-            iconClass="fas fa-thumbs-up fa-2x"
-            title="Interaction"
-            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
-              molestias repellat quibusdam adipisci quas sed ullam accusantium
-              aliquam numquam quidem."
+              imgSrc={img3}
+              alt="Web integration services"
+              title="Interaction au CŒUR"
+              description="Collaborons étroitement à chaque étape pour un processus transparent et des résultats qui dépassent vos attentes."
           />
         </div>
       </div>
@@ -46,10 +48,10 @@ const Specialize = () => {
   );
 };
 
-const SpecializeItem = ({ iconClass, title, description }) => {
+const SpecializeItem = ({ imgSrc, alt, title, description }) => {
   return (
     <div>
-      <i className={iconClass}></i>
+      <img src={imgSrc} alt={alt} />
       <h3>{title}</h3>
       <p>{description}</p>
     </div>

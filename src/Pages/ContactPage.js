@@ -1,7 +1,7 @@
 import React from 'react';
-import ContactForm from '../Components/ContactComponents/ContactFormSectionA';
-import ContactInfo from '../Components/ContactComponents/ContactInfoSectionB';
-import ContactSlogan from '../Components/ContactComponents/ContactSloganSectionC';
+import ContactForm from '../Components/ContactComponents/ContactFormSectionA.js';
+import ContactInfo from '../Components/ContactComponents/ContactInfoSectionB.js';
+import ContactSlogan from '../Components/ContactComponents/ContactSloganSectionC.js';
 
 const ContactPage = () => {
   return (

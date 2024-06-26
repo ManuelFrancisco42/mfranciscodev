@@ -1,27 +1,31 @@
-const gulp = require('gulp');
-const sass = require('gulp-sass')(require('sass'));
-const autoprefixer = require('gulp-autoprefixer');
-const cleanCSS = require('gulp-clean-css');
-const uglify = require('gulp-uglify');
-const imagemin = require('gulp-imagemin');
-const sourcemaps = require('gulp-sourcemaps');
-const concat = require('gulp-concat');
-const terser = require('gulp-terser');
+
+import gulp from 'gulp';
+import sass from 'gulp-sass';
+import * as nodeSass from 'sass';
+import autoprefixer from 'gulp-autoprefixer';
+import cleanCSS from 'gulp-clean-css';
+import imagemin from 'gulp-imagemin';
+import sourcemaps from 'gulp-sourcemaps';
+import babel from 'gulp-babel';
+import concat from 'gulp-concat';
+import terser from 'gulp-terser';
+
+// Initialize gulp-sass with node-sass
+const sassCompiler = sass(nodeSass);
 
 // Paths to various files
 const paths = {
   styles: {
-    src: 'src/scss/**/*.scss',
-    dest: 'src/css'
+    src: 'src/**/*.scss',
+    dest: 'dist/css/'
   },
   scripts: {
-    src: 'src/js/**/*.js',
-    dest: 'src/js'
+    src: 'src/**/*.js',
+    dest: 'dist/js/'
   },
   images: {
-    // src: 'src/images/**/*',
-    src: 'src/assets/images/**/*',
-    dest: 'src/images'
+    src: 'src/assets/images/**/*.{jpg,jpeg,png,gif,svg,webp}',
+    dest: 'dist/images/'
   }
 };
 
@@ -29,7 +33,7 @@ const paths = {
 function styles() {
   return gulp.src(paths.styles.src)
     .pipe(sourcemaps.init())
-    .pipe(sass().on('error', sass.logError))
+    .pipe(sassCompiler().on('error', sassCompiler.logError))
     .pipe(autoprefixer({
       cascade: false
     }))
@@ -38,10 +42,13 @@ function styles() {
     .pipe(gulp.dest(paths.styles.dest));
 }
 
-// Minify JavaScript
+// Transpile and Minify JavaScript
 function scripts() {
   return gulp.src(paths.scripts.src)
     .pipe(sourcemaps.init())
+    .pipe(babel({
+      presets: ['@babel/preset-env', '@babel/preset-react']
+    }))
     .pipe(concat('main.js'))
     .pipe(terser())
     .pipe(sourcemaps.write('.'))
@@ -67,9 +74,5 @@ const build = gulp.series(gulp.parallel(styles, scripts, images));
 const dev = gulp.series(build, watch);
 
 // Export tasks
-exports.styles = styles;
-exports.scripts = scripts;
-exports.images = images;
-exports.watch = watch;
-exports.build = build;
-exports.default = dev;
+export { styles, scripts, images, watch, build };
+export default dev;

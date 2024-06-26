@@ -1,8 +1,8 @@
 import React from 'react';
-import AboutMe from '../Components/AboutComponents/AboutMeSectionA';
-import TechnicalSkills from '../Components/AboutComponents/TechnicalSkillsSectionB';
-import Logos from '../Components/AboutComponents/LogosSectionC';
-import Testimonials from '../Components/AboutComponents/TestimonialsSectionD';
+import AboutMe from '../Components/AboutComponents/AboutMeSectionA.js';
+import TechnicalSkills from '../Components/AboutComponents/TechnicalSkillsSectionB.js';
+import Logos from '../Components/AboutComponents/LogosSectionC.js';
+import Testimonials from '../Components/AboutComponents/TestimonialsSectionD.js';
 
 
 const AboutPage = () => {
