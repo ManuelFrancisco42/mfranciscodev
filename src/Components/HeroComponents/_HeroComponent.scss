@@ -3,8 +3,7 @@
 Hero Section
 ===========
 */
-
-$bg-image:  linear-gradient(to right bottom, rgba(37, 44, 55, 0.8), rgba(19, 20, 25, 0.8)),     url("../../assets/images/showcase.webp");
+$bg-image:  linear-gradient(to right bottom, rgba(37, 44, 55, 0.8), rgba(19, 20, 25, 0.8)), url("../../assets/images/showcase.webp");
 
 .hero {
   position: relative;
@@ -40,13 +39,23 @@ $bg-image:  linear-gradient(to right bottom, rgba(37, 44, 55, 0.8), rgba(19, 20,
 
 @media (max-width: 500px) {
   .hero {
-    margin-top: -1rem;
-}
+    margin-top: -3rem;
+  }
+  .hero h1 {
+    margin-top: 0.4rem;
+    font-size: 30px;
+  }
 }
 
 @media (max-width: 375px) {
-  .hero h1{
-   margin-top: 0.4rem;
+  .hero h1 {
+    margin-top: 0.4rem;
     font-size: 30px;
+  }
 }
+
+@media (max-width: 374px) {
+  .hero {
+    display: none;
+  }
 }

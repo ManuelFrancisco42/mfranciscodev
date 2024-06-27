@@ -2,11 +2,11 @@ import React from 'react';
 import writingDownImage from "../../assets/images/thumbnail/web-development-thumbnail-4.jpg";
 import pointdrawingsImage from "../../assets/images/thumbnail/web-development-thumbnail-2.jpg";
 import PhoneontableImage from "../../assets/images/thumbnail/web-development-thumbnail-3.jpg";
-import myself from "../../assets/images/myself/AvatarMaker.png";
+import myself from "../../assets/images/myself/myAvatar.png";
 import './_AboutMeSectionA.scss';
 
 const AboutMeSectionA = () => (
-  <section id="about-a" className="text-center py-3">
+  <section id="about-a" className="text-center py-3 my-4">
     <div className="container">
       <h2 className="section-title" lang="fr">About Me</h2>
       <p className="lead" lang="fr">
@@ -17,7 +17,7 @@ const AboutMeSectionA = () => (
       Laissez-moi vous parler un peu de moi et de ce que je fais...
       </p>
       <div className="about-info">
-        <img src={myself} alt="Manuel Francisco" className="my-image" />
+        <img src={myself} alt="Manuel Francisco" className="my-image my-image-cartoon" />
         <div className="bio bg-light">
           <h4 lang="fr">Votre projet est entre de bonnes mains</h4>
           <p lang="fr">
@@ -35,7 +35,7 @@ const AboutMeSectionA = () => (
             dépasse.
           </p>
         </div>
-        <div className="award-1">
+        <div className="row-1">
           <img
             src={writingDownImage}
             alt="Person writing a brainstorm"
@@ -47,7 +47,7 @@ const AboutMeSectionA = () => (
             Le plan de conception d'applications innovantes et conviviales
           </p>
         </div>
-        <div className="award-2">
+        <div className="row-2">
           <img
             src={pointdrawingsImage}
             alt="Person drawing mobile sketches"
@@ -60,7 +60,7 @@ const AboutMeSectionA = () => (
             utilisateur intuitives et engageantes
           </p>
         </div>
-        <div className="award-3">
+        <div className="row-3">
           <img
             src={PhoneontableImage}
             alt="Phone on a table"

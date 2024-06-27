@@ -7,7 +7,7 @@ import  './_SpecializeSectionA.scss';
 
 const Specialize = () => {
   return (
-    <section id="home-a" className="text-center py-2">
+    <section id="home-a" className="text-center py-2 my-4">
       <div className="container">
         <h2 className="section-title" lang="fr">Je me consacre à la</h2>
       

@@ -9,26 +9,19 @@
   /* Fonts */
   --font-roboto: "Dosis";
 }
-$main-color:  #0b0b13;
+
+$main-color: #0b0b13;
 $dark-color: rgba(19, 20, 25, 1);
-
-
-
-/* .home-c {
-  
-  background: linear-gradient(90deg, rgb(11, 11, 19) 0%, rgba(19, 20, 25, 1) 100%);
-}
- */
 
 .skillsContainer {
   color: var(--color-text);
   margin-top: 79px;
   margin-left: 10%;
   margin-right: 10%;
-} 
+}
 
 .title {
-  color: var(--color-text);  
+  color: var(--color-text);
   font-size: 35px;
   font-weight: 700;
   letter-spacing: 1.75px;
@@ -65,9 +58,11 @@ $dark-color: rgba(19, 20, 25, 1);
   width: 120px;
   height: 120px;
 }
-.skills-txt-color{
+
+.skills-txt-color {
   color: #fff;
 }
+
 .skillImageContainer img {
   width: 75px;
 }
@@ -79,7 +74,8 @@ $dark-color: rgba(19, 20, 25, 1);
   color: #fff;
 }
 
-.history {
+.history,
+.tools {
   width: 45%;
   display: flex;
   flex-direction: column;
@@ -92,14 +88,18 @@ $dark-color: rgba(19, 20, 25, 1);
   align-items: center;
   gap: 17px;
   background: #19376d;
-  background: linear-gradient(90deg, rgb(11, 11, 19) 0%, rgba(19, 20, 25, 0.863) 100%);
+  background: linear-gradient(
+    90deg,
+    rgb(11, 11, 19) 0%,
+    rgba(19, 20, 25, 0.863) 100%
+  );
   border-radius: 10px;
   padding: 24px;
   color: #fff;
 }
 
 .historyItem img {
-  width: 50px;
+  width: 60px;
 }
 
 .historyItemDetails {
@@ -107,21 +107,29 @@ $dark-color: rgba(19, 20, 25, 1);
 }
 
 .historyItemDetails h3 {
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 500;
 }
 
 .historyItemDetails p {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 300;
 }
 
-.historyItemDetails ul {
+.historyItemDetails ul,
+.tools  {
   margin-top: 6px;
-  list-style-position: inside;
-  font-size: 25px;
-  list-style-type: disc;
-  margin-left: 17px;
+  font-size: 16px;
+  padding-left: 0;
+}
+
+.experiences {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 10px;
+  list-style-type: none;
+  padding-left: 0;
 }
 
 @media screen and (max-width: 830px) {
@@ -137,8 +145,15 @@ $dark-color: rgba(19, 20, 25, 1);
     justify-content: center;
   }
 
-  .history {
+  .history,
+  .tools  {
     width: 100%;
     gap: 9px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .experiences {
+    grid-template-columns: 1fr;
   }
 }

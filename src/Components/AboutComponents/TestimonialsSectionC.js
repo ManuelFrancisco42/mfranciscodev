@@ -3,7 +3,7 @@ import './_TestimonialsSectionC.scss';
 
 const Testimonials = () => {
   return (
-    <section id="about-d" className="py-4 ">
+    <section id="about-d" className="py-4  my-4">
       <div className="container">
         <h2 className="section-title" lang="fr">
           Mon Engagement

@@ -3,7 +3,7 @@ import  './_ContactFormSectionA.scss';
 
 const ContactForm = () => {
   return (
-    <section id="contact-a" className="text-center py-3">
+    <section id="contact-a" className="text-center py-3 my-4">
       <div className="container">
         <h2 className="section-title">Contact Me</h2>
       

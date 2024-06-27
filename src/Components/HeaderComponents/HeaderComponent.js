@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import './_HeaderComponent.scss';  
+import './_HeaderComponent.scss';
 
 const Header = () => {
   const [isActive, setIsActive] = useState(false);
   const location = useLocation();
-  
+
   useEffect(() => {
     const handleScroll = () => {
       const navElement = document.querySelector('.nav');
@@ -31,8 +31,8 @@ const Header = () => {
       <div className="container">
         <nav className={`nav ${isActive ? 'active' : ''}`} id="main-nav">
           <div id="logo">
-            <h1 className="logo"><Link className="log" to="/">Portfolio</Link></h1>
-            <p>Manuel Francisco</p>
+            <h1 className='link-header'><Link to="/">Portfolio</Link></h1>
+            <p className='link-header'><Link to="/">Manuel Francisco</Link></p>
           </div>
           <ul>
             <li>

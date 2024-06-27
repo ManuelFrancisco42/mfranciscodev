@@ -25,17 +25,14 @@ $main-color:  #0b0b13;
       transition: transform 3s cubic-bezier(0.2, 1, 0.3, 1);
     }
   
-    // Bring in main color overlay
     &:hover:after {
       transform: scale(2) translateX(0) translateY(0) rotate(-28deg);
     }
   
-    // Scale image on hover
     &:hover &-image {
       transform: scale(1.2);
     }
   
-    // Bring in text on hover
     &:hover &-text {
       opacity: 1;
       transform: translateY(0);
@@ -103,12 +100,6 @@ $main-color:  #0b0b13;
   
   @media (max-width: 500px) {
 
-  
-    // Stack Grid Columns
-
-   
-   
-   
     .items {
       grid-template-columns: 1fr;
     }

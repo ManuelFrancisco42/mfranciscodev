@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer id="main-footer">
       <div className="footer-content container">
-        <p>Copyright &copy; 2024. All Rights Reserved</p>
+        <p>Copyright &copy; 2024 MFdev. All Rights Reserved</p>
         <div className="social">
         <a href="https://x.com/mfranciscodev" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
           <i className="fab fa-twitter"></i>

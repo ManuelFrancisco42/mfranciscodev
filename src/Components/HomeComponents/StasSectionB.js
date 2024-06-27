@@ -1,8 +1,4 @@
 import React from 'react';
-/* import CertificateIcon from '../../assets/images/stats/CertificateIcon';
-import ValidatorIcon from '../../assets/images/stats/ValidatorIcon';
-import TimelapseIcon from '../../assets/images/stats/TimelapseIcon'; */
-
 import CertificateIcon from './certificateIcon.js';
 import ValidatorIcon from './ValidatorIcon.js';
 import TimelapseIcon from './TimelapseIcon.js';
@@ -10,7 +6,7 @@ import './_StasSectionB.scss';
 
 const Stats = () => {
   return (
-    <section id="home-b" className="text-center py-2">
+    <section id="home-b" className="text-center py-2 my-4">
       <div className="stats">
         <StatItem
           IconComponent={CertificateIcon}

@@ -6,8 +6,8 @@ $medium-color: #ccc;
 $dark-color: rgba(19, 20, 25, 1);
 $bg-color: #ba265d;
 // Home Sections
+
 #home {
-  // Home Section C
   &-c {
     .process {
       display: grid;
@@ -15,7 +15,7 @@ $bg-color: #ba265d;
       grid-gap: 1.5rem;
       text-align: center;
 
-      // Process Step
+      
       &-step {
         position: absolute;
         top: 0;
@@ -31,7 +31,7 @@ $bg-color: #ba265d;
         transition: width 2s, height 2s, transform 2s;
       }
 
-      // Process Icon
+      
       &-icon {
         border-radius: 50%;
         background: $dark-color;
@@ -46,7 +46,7 @@ $bg-color: #ba265d;
         cursor: pointer;
 
         &:hover {
-          background: $main-color;
+          background: $bg-color;
           width: 90px;
           height: 90px;
           line-height: 90px;
@@ -67,8 +67,8 @@ $bg-color: #ba265d;
 
 }
 
-@media (max-width: 500px) {
-  // Stack Grid Columns
+@media (max-width: 580px) {
+ 
  #home-c .process {
     grid-template-columns: 1fr;
   }

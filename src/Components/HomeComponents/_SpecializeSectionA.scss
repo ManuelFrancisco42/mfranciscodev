@@ -3,7 +3,6 @@ $main-color:  #0b0b13;
 
 // Home Sections
 #home {
-  // Home Section A
   &-a {
     .specials {
       margin-top: 3rem;
@@ -20,12 +19,12 @@ $main-color:  #0b0b13;
 }
 
 @media (max-width: 500px) {
-     // Stack Grid Columns
+   
 #home-a .specials,  #home-a .specials {
        grid-template-columns: 1fr;
      }
 
-  // Home
+ 
   #home {
     &-a {
       .specials div {

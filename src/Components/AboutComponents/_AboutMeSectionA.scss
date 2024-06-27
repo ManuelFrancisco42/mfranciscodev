@@ -1,20 +1,21 @@
-$main-color:  #0b0b13;
+$main-color: #0b0b13;
 
 #about-a {
   .about-info {
     display: grid;
     grid-template-areas:
-      'myselImage bio bio'
-      'aw1 aw2 aw3';
+      "myselImage bio bio"
+      "row1 row2 row3";
     grid-gap: 1.2rem;
+  }
 
+  .about-info .my-image-cartoon {
+    border-radius: 50%;
   }
 
   .my-image {
     grid-area: myselImage;
   }
-
- 
 
   .bio {
     grid-area: bio;
@@ -22,32 +23,31 @@ $main-color:  #0b0b13;
     padding: 0.8rem;
   }
 
-  .award-1, .award-2, .award-3 {
-    grid-area: aw1, aw2, aw3;
+  .row-1,
+  .row-2,
+  .row-3 {
+    grid-area: row1, row2, row3;
   }
 
-  .award-1 .fas,
-  .award-2 .fas,
-  .award-3 .fas {
+  .row-1 .fas,
+  .row-2 .fas,
+  .row-3 .fas {
     color: $main-color;
     margin: 1rem;
   }
 }
 
-
 @media (max-width: 500px) {
-  // Stack Grid Columns
   #about {
     &-a {
       .about-info {
         grid-template-areas:
-          'myselImage'
-          'bio'
-          'aw1'
-          'aw2'
-          'aw3';
+          "myselImage"
+          "bio"
+          "row1"
+          "row2"
+          "row3";
       }
     }
-  
-}
+  }
 }

@@ -3,7 +3,7 @@ import  './_ContactInfoSectionB.scss';
 
 const ContactInfo = () => {
   return (
-    <section id="contact-b" className="py-3 bg-dark">
+    <section id="contact-b" className="py-3 bg-dark my-4">
       <div className="container">
         <div className="contact-info">
           <div>

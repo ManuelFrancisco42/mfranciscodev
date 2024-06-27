@@ -3,7 +3,7 @@ import "./_ProcessSectionC.scss";
 
 const Process = () => {
   return (
-    <section id="home-c" className="text-center py-3 bg-dark">
+    <section id="home-c" className="text-center py-3 bg-dark my-4">
       <div className="container">
         <h2 className="section-title" lang="fr">
           Mon Processus Créatif

@@ -1,6 +1,7 @@
 // $dark-color: #333;
 $dark-color: rgba(19, 20, 25, 1);
 $main-color:  #0b0b13;
+$bg-color: #ba265d;
 // Footer
 #main-footer {
   background: $dark-color;
@@ -24,15 +25,14 @@ $main-color:  #0b0b13;
         padding: 0.5rem;
   
         &:hover {
-          background: $main-color;
+          background: $bg-color;
         }
       }
     }
   }
-  
 
    // Smartphones
-   @media (max-width: 500px) {
+   @media (max-width: 580px) {
    
     // Footer
     #main-footer {

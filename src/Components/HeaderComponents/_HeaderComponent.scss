@@ -1,26 +1,24 @@
-/* 
-===========
-Header Section
-===========
-*/
-//--bg-image:url('../assets/images/showcase.webp');
-
-// Variables
-$main-color:  #0b0b13;
+/* Variables */
+$main-color: #0b0b13;
 $medium-color: #cccccc;
 $dark-color: rgba(19, 20, 25, 1);
-$bg-image: linear-gradient(to right bottom, rgba(37, 44, 55, 0.8), rgba(19, 20, 25, 0.8)),   url("../../assets/images/websitebanner_00017.png");
+$bg-image: linear-gradient(to right bottom, rgba(37, 44, 55, 0.8), rgba(19, 20, 25, 0.8)), url("../../assets/images/websitebanner_00017.png");
 
-// Logo
+/* Logo */
 #logo {
   width: 70px;
   height: 70px;
-  color: #fff;
+  color: #d30707;
   white-space: nowrap;
   text-transform: uppercase;
+  margin-left: 0.8rem;
 }
 
-// Main Nav
+#logo .link-header a {
+  text-decoration: none;
+  border-bottom: none;
+}
+/* Main Nav */
 .nav {
   position: fixed;
   top: 0;
@@ -31,7 +29,7 @@ $bg-image: linear-gradient(to right bottom, rgba(37, 44, 55, 0.8), rgba(19, 20, 
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border-bottom: 4px solid hsla(338, 66%, 44%, 0.171); ;
+  border-bottom: 4px solid hsla(338, 66%, 44%, 0.171);
   z-index: 1000;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -42,11 +40,13 @@ $bg-image: linear-gradient(to right bottom, rgba(37, 44, 55, 0.8), rgba(19, 20, 
   z-index: 2;
   color: #222;
 }
+
 .nav.active p {
-  color: #222;
+  color:  #000;
+
 }
 
-#main-nav.active a{
+#main-nav.active a {
   color: #000;
 }
 
@@ -69,26 +69,25 @@ $bg-image: linear-gradient(to right bottom, rgba(37, 44, 55, 0.8), rgba(19, 20, 
     text-transform: uppercase;
     border-bottom: 3px transparent solid;
     padding-bottom: 0.5rem;
-    transition: border-color 0.5s, color 0.3s; 
+    transition: border-color 0.5s, color 0.3s;
 
     &:hover {
       border-color: $medium-color;
     }
 
-    &.current {
-      border-color: $main-color;
+    &.active-link {
+      border-color: #ba265d;
+      color: #ba265d;
     }
   }
 }
 
-// Header
+/* Header */
 #header {
-  // Header Home
   &-home {
     height: 100vh;
     color: #fff;
 
-    // Header Content
     .header-content {
       text-align: center;
       padding-top: 20%;
@@ -100,14 +99,13 @@ $bg-image: linear-gradient(to right bottom, rgba(37, 44, 55, 0.8), rgba(19, 20, 
     }
   }
 
-  // Header Inner
+  /* Header Inner */
   &-inner {
     height: 5.5rem;
-    // border-bottom: 3px solid $main-color;
   }
 }
 
-// Tablets & Smaller
+/* Tablets & Smaller */
 @media (max-width: 800px) {
   #header-home {
     height: 30rem;
@@ -118,16 +116,16 @@ $bg-image: linear-gradient(to right bottom, rgba(37, 44, 55, 0.8), rgba(19, 20, 
   }
 }
 
-// Landscape
+/* Landscape */
 @media (max-height: 580px) {
   #header-home {
     .header-content {
-      padding-top: 3rem;
+      padding-top: 1rem;
     }
   }
 }
 
-// Smartphones
+/* Smartphones */
 @media (max-width: 500px) {
   #main-nav {
     flex-direction: column;
@@ -138,10 +136,13 @@ $bg-image: linear-gradient(to right bottom, rgba(37, 44, 55, 0.8), rgba(19, 20, 
     }
   }
 
+  #logo {
+    margin-left: -2.2rem;
+  }
+
   #header {
     &-home {
       height: 10rem;
-      // border-bottom: 3px solid $main-color;
       background-position: 20% 30%;
 
       .header-content {
@@ -152,6 +153,41 @@ $bg-image: linear-gradient(to right bottom, rgba(37, 44, 55, 0.8), rgba(19, 20, 
     &-inner {
       height: 10rem;
     }
+  }
+
+  #home-a, #about-a, #work-a, #contact-a {
+    margin-top: -2rem;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 374px) {
+  .hero {
+    display: none;
+  }
+}
+
+@media (max-width: 330px) {
+  #home-a, #about-a, #work-a, #contact-a {
+    margin-top: -3rem;
+    font-size: 15px;
+  }
+
+  #logo {
+    margin-right: 1rem;
+  }
+
+  #main-nav li {
+    padding: 0.2rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .lead {
+    font-size: 1rem;
+    margin-bottom: 2rem;
   }
 }
 
