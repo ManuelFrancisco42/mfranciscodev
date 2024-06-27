@@ -1,27 +1,17 @@
-:root {
-  /* Colours */
-  --color-text: #fff;
-  --color-primary: #576cbc;
-  --color-secondary: #19376d;
-  --color-dark: #0b2447;
-  --color-bg: #04152d;
-
-  /* Fonts */
-  --font-roboto: "Dosis";
-}
-
+$color-secondary: #19376d;
+$color-text: #fff;
 $main-color: #0b0b13;
 $dark-color: rgba(19, 20, 25, 1);
 
 .skillsContainer {
-  color: var(--color-text);
+  color: $color-text;
   margin-top: 79px;
   margin-left: 10%;
   margin-right: 10%;
 }
 
 .title {
-  color: var(--color-text);
+  color: $color-text;
   font-size: 35px;
   font-weight: 700;
   letter-spacing: 1.75px;
@@ -50,7 +40,7 @@ $dark-color: rgba(19, 20, 25, 1);
 }
 
 .skillImageContainer {
-  background-color: var(--color-secondary);
+  background-color: $color-secondary;
   border-radius: 100%;
   display: flex;
   align-items: center;
@@ -69,7 +59,6 @@ $dark-color: rgba(19, 20, 25, 1);
 
 .skill p {
   font-size: 25px;
-  font-family: var(--font-roboto);
   font-weight: 500;
   color: #fff;
 }
@@ -102,9 +91,7 @@ $dark-color: rgba(19, 20, 25, 1);
   width: 60px;
 }
 
-.historyItemDetails {
-  font-family: var(--font-roboto);
-}
+
 
 .historyItemDetails h3 {
   font-size: 20px;
