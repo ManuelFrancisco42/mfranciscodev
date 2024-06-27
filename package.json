@@ -1,6 +1,7 @@
 {
-  "name": "mfrancisco",
+  "name": "mfranciscodev",
   "version": "0.1.0",
+  "homepage": "https://manuelfrancisco42.github.io/mfranciscodev",
   "type": "module",
   "private": true,
   "dependencies": {
@@ -19,6 +20,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "gulp": "gulp"
@@ -44,6 +47,7 @@
   "devDependencies": {
     "@babel/preset-react": "^7.24.7",
     "browser-sync": "^3.0.2",
+    "gh-pages": "^6.1.1",
     "gulp": "^5.0.0",
     "gulp-autoprefixer": "^9.0.0",
     "gulp-clean-css": "^4.3.0",

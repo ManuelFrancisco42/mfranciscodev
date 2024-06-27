@@ -50,7 +50,7 @@ const HeroComponent = () => {
             Je Suis 
             <span className="txt-type" data-wait="3000" data-words='[" Développeur Web", " " "Intégrateur Web"]'>{typedText}</span>
           </h1>
-          <p className="lead" lang='fr'>FORMÉ EN INTÉGRATION & DEVELOPMENT WEB</p>
+          <p className="lead" lang='fr'>FRONTEND DEVELOPER</p>
           <Link to="/projects" className="btn-light" role='button' rel="noopener noreferrer">View My Work</Link>
         </div>
        
