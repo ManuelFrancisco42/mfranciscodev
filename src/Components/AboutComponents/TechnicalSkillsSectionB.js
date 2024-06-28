@@ -7,6 +7,14 @@ import nodeImage from "../../assets/images/skills/node.png";
 import mongodbImage from "../../assets/images/skills/mongodb.png";
 import figmaImage from "../../assets/images/skills/figma.png";
 import jsImage from "../../assets/images/skills/javascript.png";
+import photoshopImage from "../../assets/images/skills/adobephotoshop.png";
+import bootstrapImage from "../../assets/images/skills/bootstrap.png";
+import gitImage from "../../assets/images/skills/git.png";
+import githubImage from "../../assets/images/skills/github.png";
+import symfonyImage from "../../assets/images/skills/symfony.png";
+import tailwindcssImage from "../../assets/images/skills/tailwindcss.png";
+import wordpressImage from "../../assets/images/skills/wordpress.png";
+
 
 export const TechnicalSkills = () => {
   const history = [
@@ -82,6 +90,34 @@ export const TechnicalSkills = () => {
     {
       title: "MongoDB",
       imageSrc: mongodbImage,
+    },
+    {
+      title: "Photoshop",
+      imageSrc: photoshopImage,
+    },
+    {
+      title: "Bootstrap",
+      imageSrc: bootstrapImage,
+    },
+    {
+      title: "Git",
+      imageSrc: gitImage,
+    },
+    {
+      title: "Github",
+      imageSrc: githubImage,
+    },
+    {
+      title: "Symfony",
+      imageSrc: symfonyImage,
+    },
+    {
+      title: "Tailwindcss",
+      imageSrc: tailwindcssImage,
+    },
+    {
+      title: "Wordpress",
+      imageSrc: wordpressImage,
     }
   ];
 
@@ -100,6 +136,7 @@ export const TechnicalSkills = () => {
                     <img src={skill.imageSrc} alt={skill.title} />
                   </div>
                   <p lang="fr">{skill.title}</p>
+                  
                 </div>
               );
             })}
