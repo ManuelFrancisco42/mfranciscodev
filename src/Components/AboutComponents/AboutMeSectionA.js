@@ -21,7 +21,7 @@ const AboutMeSectionA = () => (
         <div className="bio bg-light">
           <h4 lang="fr">Votre projet est entre de bonnes mains</h4>
           <p lang="fr">
-            Bienvenue dans l'univers où la créativité rencontre la fonctionnalité. Je suis [Votre Nom], un développeur web passionné avec une expertise en HTML, CSS, JavaScript, React, et Node.js. Je crée des sites web dynamiques et conviviaux depuis [X] ans.
+            Bienvenue dans l'univers où la créativité rencontre la fonctionnalité. Je suis Manuel Francisco, un développeur web passionné avec une expertise en HTML, CSS, JavaScript, React, et Node.js. Je crée des sites web dynamiques et conviviaux depuis [X] ans.
           </p>
           <h4 lang="fr">TRANSFORMEZ VOS IDÉES EN RÉALITÉ</h4>
           <p lang="fr">
