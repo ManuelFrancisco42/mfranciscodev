@@ -16,11 +16,11 @@ const sassCompiler = sass(nodeSass);
 // Paths to various files
 const paths = {
   styles: {
-    src: 'src/styles/**/*.scss',
+    src: 'src/**/*.scss',
     dest: 'dist/css/'
   },
   scripts: {
-    src: 'src/js/**/*.js',
+    src: 'src/**/*.js',
     dest: 'dist/js/'
   },
   images: {
