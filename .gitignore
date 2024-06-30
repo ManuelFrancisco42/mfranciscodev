@@ -17,9 +17,7 @@
 .env.development.local
 .env.test.local
 .env.production.local
-.package copy.json
-.gulpfile copy.mjs
-tcss-/
+package_copy.json
 
 
 npm-debug.log*
